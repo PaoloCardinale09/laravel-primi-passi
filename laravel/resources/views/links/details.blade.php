@@ -9,7 +9,7 @@
  </head>
 
  <body>
-     <h1>dettaglio link</h1>
+     <h1>dettaglio link {{ $link }}</h1>
      <a href="{{ route('links-list') }}">torna indietro</a>
 
  </body>

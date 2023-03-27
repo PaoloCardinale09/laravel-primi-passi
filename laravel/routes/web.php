@@ -31,7 +31,14 @@ Route::get('/links', function () {
      return view("links.list", compact('links'));
 })->name("links-list");
 
-Route::get('/detail ', function (){
-    return view("links.details");
+Route::get('/detail/{index}', function ($index){
+    $links = ['Homepage','Contacts', 
+        'About Us', 
+        'More'
+    ];
+
+    $link = $links[$index];
+    
+    return view("links.details", compact('link'));
 
 })->name("details");
