@@ -18,7 +18,7 @@ Route::get('/', function () {
    
 
      return view("home", compact("message"));
-});
+})->name("homepage");
 
 
 Route::get('/links', function () {
@@ -28,7 +28,10 @@ Route::get('/links', function () {
         'About Us', 
         'More'
     ];
-   
-
      return view("links.list", compact('links'));
-});
+})->name("links-list");
+
+Route::get('/detail ', function (){
+    return view("links.details");
+
+})->name("details");
