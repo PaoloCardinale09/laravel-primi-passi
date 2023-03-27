@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <h1> {{ $message}}</h1>
+    <a href=" {{route('links-list')}} ">
+
+        <h1> {{ $message}}</h1>
+    </a>
 </body>
 
 </html>

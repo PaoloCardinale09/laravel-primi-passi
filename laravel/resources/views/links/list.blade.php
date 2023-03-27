@@ -12,9 +12,13 @@
      <h1>Lista dei links</h1>
      <ul>
          @foreach($links as $link)
-         <li>{{ $link }}</li>
+         <li><a href="{{route('details')}}">{{ $link }} </a></li>
          @endforeach
      </ul>
+     <a href="{{ route('homepage')}}">
+
+         <p>torna indietro</p>
+     </a>
 
  </body>
 
